@@ -8,18 +8,16 @@ args=parser.parse_args()
 
 print(args.echo)
 
-# python prog_1.py
-# usage: prog_1.py [-h] echo
-# prog_1.py: error: the following arguments are required: echo
+# $ python3 prog.py
+# usage: prog.py [-h] echo
+# prog.py: error: the following arguments are required: echo
+# $ python3 prog.py --help
+# usage: prog.py [-h] echo
 
-# python prog_1.py --help
-# usage: prog_1.py [-h] echo
-#
 # positional arguments:
 #   echo
-#
+
 # optional arguments:
 #   -h, --help  show this help message and exit
-
-#  python prog_1.py foo
+# $ python3 prog.py foo
 # foo
