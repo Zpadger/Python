@@ -13,3 +13,6 @@ print('字符串是不是一感叹号结尾: ', str1.endswith('!'))
 str2 = '- \u4F60\u597D\u002C\u4E16\u754C'
 str3 = str1.title() + ' ' + str2.lower()
 print(str3)
+
+#字符编码网站
+#http://www.mytju.com/classCode/tools/encode_gb2312.asp
