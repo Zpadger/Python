@@ -1,4 +1,4 @@
-
+#定义和使用学生类
 #使用class关键字定义类，然后在类中通过之前学习过的函数来定义方法
 class Student(object):
 
@@ -31,7 +31,7 @@ def main():
     # 给对象发watch_movie消息
     stu1.watch_movie()
     stu2 = Student('李四',15)
-    stu2.study('政治')
+    stu2.study('思想品德')
     stu2.watch_movie()
 
 if __name__ == '__main__':
