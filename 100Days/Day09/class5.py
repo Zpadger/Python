@@ -20,6 +20,7 @@ class Clock(object):
         return cls(ctime.tm_hour,ctime.tm_min,ctime.tm_sec)
 
     def run(self):
+        #走字
         self._second += 1
         if self._second == 60:
             self._second = 0
@@ -31,6 +32,7 @@ class Clock(object):
                     self._hour = 0
 
     def show(self):
+        #显示时间
         return '%02d:%02d:%02d' % \
                (self._hour,self._minute,self._second)
 
@@ -39,6 +41,7 @@ def input_thread(L):
     L.append(None)
 
 def main():
+    # 通过类方法创建对象并获取系统时间
     clock = Clock.now()
     L = []
     _thread.start_new_thread(input_thread, (L,))
