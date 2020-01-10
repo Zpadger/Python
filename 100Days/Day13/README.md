@@ -1,7 +1,8 @@
 ## Python中zip()函数详解  
 
-![Python zip()](zip1.png "zip()")
-
+<p align="center">
+<img src="zip1.png"><br/>
+</p>
 
 ### zip()的作用  
 zip()语法：  
@@ -37,7 +38,9 @@ C c 3
 
 #### zip()函数在Python中的工作方式  
 
-![Python zip()](zip2.png "zip()")
+<p align="center">
+<img src="zip2.png"><br/>
+</p>
 
 如果各个迭代器的元素个数不一致，则zip()函数返回列表长度与最短的对象相同：
 >uppercase = ['A', 'B', 'C', 'D', 'E']  
@@ -106,7 +109,10 @@ print(a == list(a2) and b == list(b2))
 
 ### zip与列表生成式（for循环潜在问题）  
 zip()函数与Python中的for循环一起使用的可视化
-![Python zip()](zip3.png "zip()")  
+
+<p align="center">
+<img src="zip3.png"><br/>
+</p>
 
 #### 在应用for循环后注意缺少的元素！  
 
