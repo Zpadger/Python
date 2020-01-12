@@ -58,4 +58,4 @@ print(json.loads(n)) # 无输出
 也就是说str转化出的字符串格式不符合json规范，无法完成json格式字符串与python对象之间的转换(但是可以使用eval函数转换)  
 
 ### 本文参考:[知乎]:https://zhuanlan.zhihu.com/p/37178347 "知乎专栏"  
-### 代码见文件:str&dumps.py
+### 代码见文件:[str&dumps.py](str&dumps.py)
