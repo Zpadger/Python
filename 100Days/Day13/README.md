@@ -16,6 +16,7 @@ Python的内置help()模块对此的解释：
 举例简单演示zip()的功能:
 >uppercase = ['A', 'B', 'C']  
 lowercase = ['a', 'b', 'c']  
+&#8195;  
 for x, y in zip(uppercase, lowercase):  
 &#8194;&#8195;print(x, y)
 
@@ -28,6 +29,7 @@ C c
 >uppercase = ['A', 'B', 'C']  
 lowercase = ['a', 'b', 'c']  
 numbers = [1, 2, 3]  
+&#8195;  
 for x, y, z in zip(uppercase, lowercase, numbers):  
 &#8194;&#8195;print(x, y, z)
 
@@ -46,6 +48,7 @@ C c 3
 >uppercase = ['A', 'B', 'C', 'D', 'E']  
 lowercase = ['a', 'b', 'c', 'd']  
 numbers = [1, 2, 3]  
+&#8195;  
 for x, y, z in zip(uppercase, lowercase, numbers):  
 &#8194;&#8195;print(x, y, z)
 
@@ -68,6 +71,7 @@ zip()函数返回一个zip对象（类似于map()操作方式）。
 zip对象提供了一些有趣的功能（迭代速度比list更快），但是我们经常需要将其转换为list。为了做到这一点，我们需要调用list()函数：  
 >b = ["red", "green", "blue"]  
 c = ["leopard", "cheetah", "jaguar"]  
+&#8195;  
 print(list(zip(b, c)))  
 
 输出:  
@@ -76,7 +80,9 @@ print(list(zip(b, c)))
 list()函数将zip对象转换为一个元组列表。我们可以使用索引浏览各个元组。出于可读性考虑，我们首先将新列表分配给一个变量：  
 >b = ["red", "green", "blue"]  
 c = ["leopard", "cheetah", "jaguar"]  
+&#8195;  
 new_list = list(zip(b, c))  
+&#8195;  
 print(new_list[0])  
 print(new_list[1])  
 print(new_list[2])  
@@ -90,6 +96,7 @@ print(new_list[2])
 另外，该dict()函数可用于将zip对象转换为字典。需要注意的是，只能使用两个zip()参数-前者产生key，后者产生value：  
 >b = ["red", "green", "blue"]  
 f = ["strawberry", "kiwi", "blueberry"]  
+&#8195;  
 print(dict(zip(b, f)))
 
 输出:  
@@ -99,9 +106,11 @@ print(dict(zip(b, f)))
 在某些情况下，我们需要执行相反的操作——解压迭代器。解压操作涉及将压缩后的元素恢复为其原始状态。为此，我们添加* 运算符到函数调用中。例：  
 >a = [1, 2, 3]  
 b = [4, 5, 6]  
+&#8195;  
 zipped = zip(a, b)  
 list(zipped)  
 a2, b2 = zip(* zip(a, b))  
+&#8195;  
 print(a == list(a2) and b == list(b2))  
 
 输出:  
@@ -119,6 +128,7 @@ zip()函数与Python中的for循环一起使用的可视化
 Python的另一个很棒的功能——列表推导式，可以与zip()函数结合使用。  
 >m = ["mind", "mouse", "mini"]  
 n = ["norm", "night", "necklace"]  
+&#8195;  
 [print(a, b) for a, b in zip(m, n)]
 
 输出:  
@@ -136,6 +146,7 @@ NameError: name 'a' is not defined
 但是，如果使用for循环而不是列表生成式，然后打印a，我们会得到一些奇怪的结果。请记住，for循环输出的结果与列表生成式的结果相同。  
 >m = ["mind", "mouse", "mini"]  
 n = ["norm", "night", "necklace"]  
+&#8195;  
 for m, n in zip(m, n):  
 &#8195;print(m, n)  
 print(m)
