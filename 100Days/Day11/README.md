@@ -2,14 +2,14 @@
 
 ### 例子  
 >import json  
-    print(str([1,2])) # [1, 2]  
-    print(str([1, 2])) # [1, 2]  
-    print(str([1,  2])) # [1, 2]  
-    print(str([1,2]) == str([1, 2]) == str([1,  2])) # True  
-    print(json.dumps([1,2])) #[1, 2]  
-    print(json.dumps([1, 2])) # [1, 2]  
-    print(json.dumps([1,  2])) # [1, 2]  
-    print(json.dumps([1,2]) == json.dumps([1, 2]) == json.dumps([1,  2])) # True  
+&#8195;print(str([1,2])) # [1, 2]  
+    &#8195;print(str([1, 2])) # [1, 2]  
+    &#8195;print(str([1,  2])) # [1, 2]  
+    &#8195;print(str([1,2]) == str([1, 2]) == str([1,  2])) # True  
+    &#8195;print(json.dumps([1,2])) #[1, 2]  
+    &#8195;print(json.dumps([1, 2])) # [1, 2]  
+    &#8195;print(json.dumps([1,  2])) # [1, 2]  
+    &#8195;print(json.dumps([1,2]) == json.dumps([1, 2]) == json.dumps([1,  2])) # True  
 
 从上面例子可以看出  
 * str和json.dumps都不是原模原样地输出我们输入的内容，会自动将列表逗号后面只加一个空格  
@@ -44,6 +44,7 @@ str转化后的字符串中，None还是用None表示，而json.dumps则用null�
 >m = ['a', 'b']  
 n = json.dumps(m)  
 print(n) # ["a", "b"]  
+&#8195;  
 #-----存储入文件，读取文件-----  
 p = json.loads(n)  
 p.append('c')  
