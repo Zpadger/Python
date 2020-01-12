@@ -4,7 +4,7 @@
 
 ### 目录  
 生成器generator以及yield表达式详解:  
-[1.最简单的生成器](# 1-最简单的生成器)  
+[1.最简单的生成器](#https://github.com/Zpadger/Python/blob/master/100Days/Day13/Python%E5%8D%8F%E7%A8%8B%E8%AF%A6%E8%A7%A3(%E4%B8%80).md#1%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%88%90%E5%99%A8)  
 [2.send()方法的使用](# 2-send()方法的使用)  
 [3.yield语句的用法总结](# 3-yield语句的用法总结)  
 [4.迭代器(生成器)的send方法详解](# 4-迭代器(生成器)的send方法详解)  
